@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Garet Book';
+    src: url('./Garet/Garet-Book/Garet-Book.woff2') format('woff2'),
+        url('./Garet/Garet-Book/Garet-Book.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Garet Heavy';
+    src: url('./Garet/Garet-Heavy/Garet-Heavy.woff2') format('woff2'),
+        url('./Garet/Garet-Heavy/Garet-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

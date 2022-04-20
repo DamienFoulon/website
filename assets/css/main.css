@@ -1,0 +1,201 @@
+@import url('../fonts/fonts.css');
+
+/**************************************/
+/**************  Mobile  **************/
+/**************************************/
+
+:root {
+    --green: #7eb681;
+    --bg: #121212;
+    --nav: #1a1a1a;
+    --text: #f5fdfb;
+}
+
+body {
+    font-family: "Garet Book";
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Garet Heavy";
+    color: var(--green);
+}
+
+strong {
+    color: var(--green);
+}
+
+.clear {
+    clear: both;
+}
+
+/* navbar */
+
+.navbar {
+    overflow: hidden;
+    background-color: var(--nav);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-right, .home {
+    visibility: hidden;
+}
+
+.nav-left a, .nav-right a {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.nav-left a {
+    float: left;
+    padding: 0.75em 1em;
+    display: block;
+    text-decoration: none;
+}
+
+.nav-right a {
+    padding: 0.75em 0.5em;
+    display: inline;
+    text-decoration: none;
+    float: left;
+}
+
+/* Page content */
+
+.container {
+    margin-top: 4em;
+    padding-left: 1em;
+}
+
+article {
+    margin-bottom: 6em;
+    padding-top: 2em;
+}
+
+.container article:nth-child(1){
+    padding-top: 0;
+}
+
+.button {
+    padding: 1em 0.5em;
+    background-color: var(--green);
+    text-decoration: none;
+    color: #f5fdfb;
+    border-radius: 10px;
+}
+
+.color-switch {
+    background-color: var(--green);
+    display:block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    left: 100%;
+    bottom: 0px;
+    transform: translate(-130%, -40%);
+    margin: 0 auto;
+}
+
+.color-switch i {
+    color: #f2f2f2;
+    position: fixed;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.right {
+    float: right;
+    margin: 0 2em;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--nav);
+    color: var(--text);
+    padding: 1em 0;
+}
+
+footer img {
+    width: 4em;
+    float: left;
+    padding: 1em;
+}
+
+footer h2 {
+    font-size: 18px;
+    margin-top: 2em;
+}
+
+footer article h3 {
+    text-transform: uppercase;
+}
+
+footer article {
+    padding-left: 1.5em;
+    margin-bottom: -2em;
+}
+
+footer a {
+    display: flex;
+    margin: 1em 0 1em 0;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.copyrights {
+    font-size: 12px;
+    margin-top: 4em;
+    padding-left: 1.25em;
+}
+
+/**************************************/
+/**************  Desktop  *************/
+/**************************************/
+
+@media screen and (min-width: 1200px) {
+/* navbar */
+.navbar {
+    overflow: hidden;
+    background-color: var(--nav);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-left a {
+    float: left;
+}
+
+.nav-right a {
+    float: right;
+}
+
+.nav-left a, .nav-right a {
+    padding: 1em;
+    display: block;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {
+    padding: 16px;
+}
+
+.sticky + .container {
+    padding-top: 60px;
+}
+
+}
