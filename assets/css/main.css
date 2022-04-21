@@ -65,6 +65,11 @@ strong {
     float: left;
 }
 
+.active {
+    background-color: #ddd;
+    color: black !important;
+}
+
 /* Page content */
 
 .container {
@@ -161,7 +166,23 @@ footer a {
 /**************************************/
 
 @media screen and (min-width: 1200px) {
+body {
+    font-family: "Garet Book";
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 18px;
+}
+    
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Garet Heavy";
+    color: var(--green);
+    font-size: 32px;
+}
+
 /* navbar */
+
 .navbar {
     overflow: hidden;
     background-color: var(--nav);
@@ -170,8 +191,20 @@ footer a {
     width: 100%;
 }
 
+.nav-right, .home {
+    visibility: visible;
+}
+
+.home {
+    margin-left: -3em;
+}
+
 .nav-left a {
     float: left;
+}
+
+.navbarToggle {
+    visibility: hidden;
 }
 
 .nav-right a {
@@ -199,3 +232,69 @@ footer a {
 }
 
 }
+
+/* Page content */
+
+.container {
+    margin-top: 6em;
+    padding-left: 1em;
+}
+
+article {
+    margin-bottom: 8.5em;
+    padding-top: 2em;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--nav);
+    display: flex;
+    color: var(--text);
+    padding: 2em 0;
+    font-size: 14px;
+}
+
+footer h3 {
+    font-size: 16px;
+}
+
+footer img {
+    width: 4em;
+    height: 4em;
+    float: left;
+    padding: 1em;
+}
+
+footer h2 {
+    font-size: 18px;
+    margin-top: 2em;
+}
+
+footer article h3 {
+    text-transform: uppercase;
+}
+
+footer article {
+    flex-direction: column;
+    margin-left: 17em;
+    margin-bottom: -2em;
+}
+
+footer a {
+    display: flex;
+    margin: 1em 0 1em 0;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.copyrights {
+    display: block;
+    font-size: 12px;
+    margin-top: 4em;
+    padding-left: 1.25em;
+    align-items: center;
+    padding-top: 20em;
+    margin-left: -35em;
+}
+

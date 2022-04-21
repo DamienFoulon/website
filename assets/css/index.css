@@ -8,9 +8,28 @@
 
 #home p {
     text-align: left;
-    width: 95%;
 }
 
 #home img {
     width: 95%
+}
+
+/**************************************/
+/**************  Desktop  *************/
+/**************************************/
+
+@media screen and (min-width: 1200px) {
+    #home h1 {
+        margin-bottom: -0.5em;
+        color: var(--text);
+    }
+    
+    #home p {
+        text-align: left;
+        width: 95%;
+    }
+    
+    #home img {
+        width: 30%
+    }
 }
