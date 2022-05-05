@@ -9,7 +9,6 @@
 	<meta name="keywords" content="outils, développeur, générateur, tableau, boutons, gratuit">
 	<meta name="author" content="Damien Foulon"/>
 	<meta name="copyright" content="Devausorus"/>
-	<meta name="tags">
 	<link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon">
 	<script src="https://kit.fontawesome.com/d6a0937d00.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -38,13 +37,17 @@
 			<p>
 				Notre but est de rendre <strong>accessibles</strong>, les outils basiques afin de faciliter la vie des utilisateurs.
 			</p>
-			<img src="assets/img/logo-bulles.png" alt="logo-bulles">
-			<div class="clear"></div>
+			<img id="player" src="assets/img/logo/logo-bulles.png" alt="logo-bulles">
+			<div class="game">
+				<div id="dino"></div>
+				<div id="cactus"></div>
+			  </div>
 		</article>
 		<article id="services">
 			<h1>Nos services</h1>
 			<p>Vous pouvez consultez nos différents services mis en place sur notre page dédiée à cet effet.</p>
-			<a class="button right" href="services.html">En savoir plus</a>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque tempora unde nesciunt! Eveniet rerum veritatis placeat assumenda voluptates numquam eius saepe corrupti tempore reprehenderit. Porro nam odit necessitatibus quae ullam!</p>
+			<a class="button end-text" href="services.html">En savoir plus</a>
 			<div class="clear"></div>
 		</article>
 		<article id="about">
@@ -65,31 +68,45 @@
 	</div>
 	
 	<footer>
-		<img src="assets/img/logo.png" alt="logo-devausorus">
-		<h2>DEVAUSORUS.COM</h2>
-		<div class="clear"></div>
-		<article>
-			<h3>Contacts</h3>
-			<section class="contact mail">
-				<a href="mailto:foulon.damien.pro@gmail.com">Mail</a>
-			</section>
-			<section class="contact twitter">
-				<a href="#">Twitter</a>
-			</section>
-		</article>
-		<article>
-			<h3>Legal</h3>
-			<a href="#">Politique de confidentialité</a>
-			<a href="#">Conditions générales d'utilisations</a>
-			<a href="#">Conditions générales de ventes</a>
-			<a href="#">Site Map</a>
-		</article>
-		<section class="copyrights">
-			<p>© 2022 Devausorus • Tous droits réservés</p>
-		</section>
-	</footer>
+        <div class="art1">
+            <div class="logodino">
+                <img id="#logo" src="assets/img/logo/logo.png" alt="logo-devausorus">
 
+            </div>
+            <h2>DEVAUSORUS.COM</h2>
+            <div class="clear"></div>
+            <span id="styleart1">
+                <h3>Contacts</h3>
+                <section class="contact mail">
+                    <a href="mailto:foulon.damien.pro@gmail.com">Mail</a>
+                </section>
+                <section class="contact twitter">
+                    <a href="#">Twitter</a>
+                </section>
+                <section class="contact twitter">
+                    <a href="#">Twitter</a>
+                </section>
+                <section class="contact twitter">
+                    <a href="#">Twitter</a>
+                </section>
+            </span>
+            <span>
+                <h3>Legal</h3>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Conditions générales d'utilisations</a>
+                <a href="#">Conditions générales de ventes</a>
+                <a href="#">Site Map</a>
+            </article>
+        </div>
+        <section class="copyrights">
+            <p>© 2022 Devausorus • Tous droits réservés</p>
+        </section>
+    </footer>
+
+	
 	<script src="assets/js/navbar/navbar.js"></script>
 	<script src="assets/js/switch_light_mod/switch.js"></script>
+	<script src="assets/js/game/start-game.js"></script>
+	<script src="assets/js/game/game.js"></script>
 </body>
 </html>

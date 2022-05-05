@@ -19,17 +19,98 @@
 /**************************************/
 
 @media screen and (min-width: 1200px) {
+
+    #home {
+        width: 100%;
+        margin-bottom: 13em;
+    }
     #home h1 {
-        margin-bottom: -0.5em;
+        text-align: left;
         color: var(--text);
     }
     
     #home p {
         text-align: left;
-        width: 95%;
     }
     
     #home img {
-        width: 30%
+        width: 30%;
+        margin-bottom: -1.2em;
     }
+
+    #home #game-ground {
+        width: 100%;
+        position: absolute
+    }
+
+    article {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .game {
+        width: 600px;
+        height: 200px;
+        border: 1px solid black;
+        margin: auto;
+        visibility: hidden;
+      }
+      
+      #dino {
+        width: 50px;
+        height: 50px;
+        background-image: url("../img/game/dino-run.gif");
+        background-size: 50px 50px;
+        position: relative;
+        top: 152px;
+      }
+      
+      .jump {
+        animation: jump 0.5s linear;
+      }
+      
+      @keyframes jump {
+        0% {
+          top: 152px;
+        }
+    
+        25% {
+          top: 68px;
+        }
+      
+        50% {
+          top: 40px;
+        }
+    
+        75% {
+          top: 68px;
+        } 
+      
+        100% {
+          top: 152px;
+        }
+      }
+      
+      #cactus {
+        width: 70px;
+        height: 60px;
+        position: relative;
+        top: 90px;
+        left: 580px;
+      
+        background-image: url("../img/game/cactus.png");
+        background-size: 70px 60px;
+      
+        animation: block 1s infinite linear;
+      }
+      
+      @keyframes block {
+        0% {
+          left: 580px;
+        }
+      
+        100% {
+          left: -20px;
+        }
+      }
 }
