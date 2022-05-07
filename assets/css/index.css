@@ -49,11 +49,13 @@
     }
 
     .game {
-        width: 600px;
-        height: 200px;
-        border: 1px solid black;
+        width: 100vw;
+        border: 1px solid white;
+        height: 15vw;
         margin: auto;
         visibility: hidden;
+        display: flex;
+        overflow: hidden;
       }
       
       #dino {
@@ -62,7 +64,10 @@
         background-image: url("../img/game/dino-run.gif");
         background-size: 50px 50px;
         position: relative;
-        top: 152px;
+        display: flex;
+        justify-content: center;
+        align-self: flex-end;
+        margin-left: 5em;
       }
       
       .jump {
@@ -71,46 +76,48 @@
       
       @keyframes jump {
         0% {
-          top: 152px;
+          top: 0px;
         }
-    
+
         25% {
-          top: 68px;
+          top: -60px;
         }
-      
+
         50% {
-          top: 40px;
+          top: -120px;
         }
-    
+
         75% {
-          top: 68px;
-        } 
+          top: -60px;
+        }
       
         100% {
-          top: 152px;
+          top: -0px;
         }
       }
       
       #cactus {
-        width: 70px;
+        width: 37.5px;
         height: 60px;
         position: relative;
-        top: 90px;
-        left: 580px;
+        align-self: flex-end;
+        justify-content: end;
       
         background-image: url("../img/game/cactus.png");
-        background-size: 70px 60px;
-      
-        animation: block 1s infinite linear;
+        background-size: 37.5px 60px;
+      }
+
+      .animate {
+        animation: cactus 2s linear infinite;
       }
       
-      @keyframes block {
+      @keyframes cactus {
         0% {
-          left: 580px;
+          left: 100vw;
         }
       
         100% {
-          left: -20px;
+          left: -10vw;
         }
       }
 }

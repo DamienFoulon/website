@@ -21,6 +21,7 @@ function hideStarter() {
 function startGame() {
     player.style.visibility = 'hidden';
     game.style.visibility = 'visible';
+    document.querySelector('#cactus').classList.add('animate');
 
 }
 
