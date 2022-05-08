@@ -50,7 +50,6 @@
 
     .game {
         width: 100vw;
-        border: 1px solid white;
         height: 15vw;
         margin: auto;
         visibility: hidden;
