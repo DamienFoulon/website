@@ -20,6 +20,10 @@
 
 @media screen and (min-width: 1200px) {
 
+    body {
+      overflow-x: hidden;
+    }
+
     #home {
         width: 100%;
         margin-bottom: 13em;
@@ -50,7 +54,6 @@
 
     .game {
         width: 100vw;
-        border: 1px solid white;
         height: 15vw;
         margin: auto;
         visibility: hidden;
